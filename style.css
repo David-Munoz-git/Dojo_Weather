@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Balsamiq sans;
+}
+/* utilities start */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+/* utilities end */
+
+/* nav start */
+
+nav {
+    background-color: aqua;
+    padding: .5em 0;/* "em" is the size reliteve to the font */
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+nav h1 { 
+    font-size: 2.5em;/* "em" is the size reliteve to the font inside the div */
+}
+/* nav end */
+
+/* main start */
+main {
+    min-height: 400px;
+}
+
+.main-header {
+padding: 1rem; /* "rem" is 2x to the browser's base font sizes */
+}
+
+.days {
+    padding: 1rem 0 0; /* "rem" is 2x to the browser's base font sizes */
+}
+
+.day {
+    flex: 1;
+    text-align: center;
+    padding: 1em;/* "em" is the size reliteve to the font */
+    background-color: lightgrey;
+}
+
+.day img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.day>*{ /* >* selects every direct child with in that div*/
+    margin-bottom: 1rem;/* "rem" is 2x to the browser's base font sizes */
+}
+
+.high, .low {
+    font-size: x-large;
+}
+
+.high {
+    color: red;
+}
+.low {
+    color: blue;
+}
+/* main end */
+
+.cookie {
+border: 2px solid black;
+padding: 1rem;/* "rem" is 2x to the browser's base font sizes */
+margin-top: 20px;
+}
+
+.cookie button {
+    white-space: nowrap; /* removes space around the button */
+    background-color: aqua;
+    padding: .5em 1em;
+    box-shadow: 2px 2px black;
+}

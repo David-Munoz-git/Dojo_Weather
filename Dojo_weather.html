@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="container flex">
+            <h1>DojoWeather</h1>
+            <ul class="flex">
+                <li onclick="alert('Loading weather report...')">Goshen</li>
+                <li onclick="alert('Loading weather report...')">Chester</li>
+                <li onclick="alert('Loading weather report...')">Bloomingburg</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- main container  start -->
+    <main class="container">
+        <!-- header start -->
+        <div class="main-header flex">
+            <h2>Middletown</h2>
+            <form>
+                <label for="temp-unit">show temperature in</label>
+                <select id="temp-unit" onchange="changeUnit()">
+                    <option value="c">C°</option>
+                    <option value="f">F°</option>
+                </select>
+            </form>
+        </div>
+        <!-- header end -->
+        <!-- line between header and days -->
+        <hr>
+        <!-- line between header and days -->
+        <!-- days container start -->
+        <div class="days flex">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="./dojo_weather_img/some_rain.png" alt="Some Rain">
+                <p>some rain</p>
+                <div class="highs-and-lows flex">
+                    <P><span class="high">24</span>°</P>
+                    <P><span class="low">18</span>°</P>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="./dojo_weather_img/some_sun.png" alt="Some sun">
+                <p>some sun</p>
+                <div class="highs-and-lows flex">
+                    <P><span class="high">27</span>°</P>
+                    <P><span class="low">19</span>°</P>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="./dojo_weather_img/some_clouds.png" alt="Some clouds">
+                <p>some clouds</p>
+                <div class="highs-and-lows flex">
+                    <P><span class="high">21</span>°</P>
+                    <P><span class="low">16</span>°</P>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="./dojo_weather_img/some_sun.png" alt="Some sun">
+                <p>some sun</p>
+                <div class="highs-and-lows flex">
+                    <P><span class="high">26</span>°</P>
+                    <P><span class="low">21</span>°</P>
+                </div>
+            </div>
+        </div>
+        <!-- days container end -->
+        <!-- cookie block start -->
+        <div id="cookieBlock" class="cookie flex">
+            <img src="./dojo_weather_img/cookie.png" alt="cookie">
+            <div class="cookie-copy">
+                <h4>Stop! Cookie Time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="remove(cookieBlock)">I Accept</button>
+        </div>
+        <!-- cookie block end -->
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
